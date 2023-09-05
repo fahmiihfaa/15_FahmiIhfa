@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pribadi</title>
+    <link rel="shortcut icon" href="smile (1).png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 style="text-align:center;">Formulir Pribadi</h1>
+    <form style="border: 2px solid" style="width: max-content; margin: 0 auto;">
+        <fieldset style="border: 2px solid #cc00ff; padding: 20px;">
+            <label style="margin-bottom: 5px;" for="nama">Nama:</label>
+            <input style="width: 100%;" type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required><br><br>
+
+            <label style="margin-bottom: 5px;" for="password">Password:</label>
+            <input style="width: 100%;" type="password" id="password" name="password" required><br><br>
+
+            <label style="margin-bottom: 5px;" for="tanggal">Tanggal Lahir:</label>
+            <input style="width: 100%;" type="date" id="tanggal" name="tanggal" required><br><br>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <input type="radio" id="pria" name="jenis_kelamin" value="Pria" required>
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita" required>
+            <label for="wanita">Wanita</label><br><br>
+
+            <label style="margin-bottom: 5px;" for="telepon">Nomor Telepon:</label>
+            <input style="width: 100%;" type="tel" id="telepon" name="telepon" placeholder="Masukkan Nomor Telepon" required><br><br>
+
+            <tr>
+                <td><label for="asal">Asal Kota</label></td>
+                <td style="padding: 10px;"><span>:</span></td> <br>
+                <td><select name="salutation">
+                    <option>Purwokerto</option>
+                    <option>Wangon</option>
+                    <option>Banjarnegara</option>
+                    <option>Purbalingga</option>
+                </select> </td>
+            </tr> <br><br>
+
+            <label style="margin-bottom: 5px;" for="alamat">Alamat:</label>
+            <textarea style="width: 100%;" id="alamat" name="alamat" rows="4" placeholder="Silahkan Katakan Isi Alamat" required></textarea><br><br>
+
+            <label for="hobi">Hobi:</label>
+            <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+            <label for="membaca">Membaca</label>
+            <input type="checkbox" id="menulis" name="hobi[]" value="menulis" checked>
+            <label for="menulis">Menulis</label>
+            <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+            <label for="musik">Mendengarkan Musik</label><br><br>
+
+            <label style="margin-bottom: 5px;" for="makanan">Makanan Favorite:</label>
+            <input style="width: 100%;" type="text" name="makanan" list="makanan"><br>
+            <datalist id="makanan">
+                <option value="Seblak"></option>
+                <option value="Mie Ayam"></option>
+                <option value="Bakso"></option>
+                <option value="Sate"></option>
+            </datalist>
+            <br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Next Page">
+        </fieldset>
+    </form>
+</body>
+
+</html>
